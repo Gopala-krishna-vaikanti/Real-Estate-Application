@@ -8,18 +8,25 @@
     - python3 -m venv env   || py -3.10 -m venv env
     - source env/bin/activate
     - npx gitignore python 
-    - python -m pip list   # check the packages and their versions inside the virtual env
-    - python -m pip freeze  # List packages with exact versions
-    - python -m pip show django  # Show details of a package
-    - python -m pip --version  # Check pip version and location
-    - python --version # Check Python version
-    - which python # Find active Python executable
-    - which pip  # Find pip executable
-
+    
     - create requirements.txt & run it [make sure the python version is 3.10 otherwise raise dependency issues]
     - if you dont have 3.10, install the 64-bit downloader and install it and add path to the python in user Variables under **path**
     - pip install -r requirements.txt
     - pip list || pip freeze > new_requirements.txt
+
+    - create django project
+        * django-admin startproject real_estate .
+
+
+## check pip
+- python -m pip list   # check the packages and their versions inside the virtual env
+- python -m pip freeze  # List packages with exact versions
+- python -m pip show django  # Show details of a package
+- python -m pip --version  # Check pip version and location
+- python --version # Check Python version
+- which python # Find active Python executable
+- which pip  # Find pip executable
+
 
 
 + https://www.toptal.com/developers/gitignore/api/python :: tells you exactly which files are excluded from git, needed to add .gitignore
